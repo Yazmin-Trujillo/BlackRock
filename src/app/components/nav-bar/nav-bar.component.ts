@@ -7,11 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavBarComponent implements OnInit {
   displaySidebar = false;
-  searchText= '';
-  
+  searchText = '';
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  //funciones
+  showSidebar() {
+    this.displaySidebar = true
+  }
+  hideSidebar() {
+    this.displaySidebar = false
+  }
 }
