@@ -10,11 +10,15 @@ import {ToolbarModule} from 'primeng/toolbar';
 import {InputTextModule} from 'primeng/inputtext';
 import { FormsModule } from '@angular/forms';
 import { NavBarComponent } from './nav/nav-bar/nav-bar.component';
+import { HomeComponent } from './components/home/home.component';
+import { PerformanceComponent } from './components/performance/performance.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavBarComponent
+    NavBarComponent,
+    HomeComponent,
+    PerformanceComponent
   ],
   imports: [
     BrowserModule,
