@@ -8,17 +8,32 @@ import {ButtonModule} from 'primeng/button';
 import {SidebarModule} from 'primeng/sidebar';
 import {ToolbarModule} from 'primeng/toolbar';
 import {InputTextModule} from 'primeng/inputtext';
+import {SelectButtonModule} from 'primeng/selectbutton';
+import {Card, CardModule} from 'primeng/card';
 import { FormsModule } from '@angular/forms';
+import {StyleClassModule} from 'primeng/styleclass';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { HomeComponent } from './components/home/home.component';
 import { PerformanceComponent } from './components/performance/performance.component';
+import { QuizComponent } from './components/quiz/quiz.component';
+import { FirstQuestionComponent } from './components/first-question/first-question.component';
+import { SecondQuestionComponent } from './components/second-question/second-question.component';
+import { ThirdQuestionComponent } from './components/third-question/third-question.component';
+import { FourthQuestionComponent } from './components/fourth-question/fourth-question.component';
+import { FifthQuestionComponent } from './components/fifth-question/fifth-question.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavBarComponent,
     HomeComponent,
-    PerformanceComponent
+    PerformanceComponent,
+    QuizComponent,
+    FirstQuestionComponent,
+    SecondQuestionComponent,
+    ThirdQuestionComponent,
+    FourthQuestionComponent,
+    FifthQuestionComponent
   ],
   imports: [
     BrowserModule,
@@ -28,8 +43,11 @@ import { PerformanceComponent } from './components/performance/performance.compo
     ButtonModule,
     SidebarModule,
     ToolbarModule,
-    InputTextModule
-    
+    InputTextModule,
+    SelectButtonModule,
+    CardModule,
+    StyleClassModule,
+         
   ],
   providers: [],
   bootstrap: [AppComponent]
