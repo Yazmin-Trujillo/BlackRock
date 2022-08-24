@@ -1,0 +1,27 @@
+::ng-deep .p-toolbar {
+    background-color: black;
+    color: white;
+    border-radius: 0;
+    
+    .title {
+        font-weight: bold;
+        font-size: 1.3rem;
+    }
+}
+
+::ng-deep .p-sidebar {
+    background: black;
+
+    .p-button-text {
+        color: white;
+    }
+}
+
+::ng-deep .p-button.p-button-icon-only {
+    background: black;
+    border: 1px solid #FFCE00;
+}
+
+::ng-deep .p-sidebar.p-sidebar-left {
+    top: 5.3rem;
+}

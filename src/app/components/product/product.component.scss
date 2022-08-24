@@ -1,0 +1,33 @@
+.productCard {
+    // display: grid;
+    // grid-template-columns: repeat(2, 1fr);
+    background: black;
+    border: 2px solid white;
+    text-align: center;
+    box-sizing: border-box;
+    height: 100%;
+    color: white;
+
+    &:hover {
+        border: 2px solid #FFCE00;
+    }
+
+    .ticker {
+        display: flex;
+        justify-content: center;
+        font-weight: bolder;
+        padding: .2rem;
+        background: black;
+        color: #FFCE00;
+        font-size: 1.2rem;
+
+    }
+
+    .productName {
+        font-weight: bolder;
+        font-size: 1.2rem;
+    }
+
+    .productDescription {}
+
+}
