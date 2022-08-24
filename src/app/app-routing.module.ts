@@ -3,7 +3,6 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
 import { InvestmentComponent } from './components/investment/investment.component';
 import { PerformanceComponent } from './components/performance/performance.component';
-
 import { QuizComponent } from './components/quiz/quiz.component';
 import { FirstQuestionComponent } from './components/first-question/first-question.component';
 import { SecondQuestionComponent } from './components/second-question/second-question.component';
@@ -24,6 +23,7 @@ const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'invstment', component: InvestmentComponent},
   { path: 'p', component: ProductComponent},
+  { path:'investment-component', component: InvestmentComponent},
 ];
 
 @NgModule({

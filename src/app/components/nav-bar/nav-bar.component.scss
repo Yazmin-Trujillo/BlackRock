@@ -2,7 +2,7 @@
     background-color: black;
     color: white;
     border-radius: 0;
-    
+
     .title {
         font-weight: bold;
         font-size: 1.3rem;
@@ -24,4 +24,13 @@
 
 ::ng-deep .p-sidebar.p-sidebar-left {
     top: 5.3rem;
+}
+
+::ng-deep .p-sidebar-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.p-button-label {
+    text-align: start;
 }

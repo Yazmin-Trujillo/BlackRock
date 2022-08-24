@@ -24,7 +24,7 @@
     <div class="productSection">
         <p class="productHeader">Estos son los productos en los que puedes invertir</p>
         <div class="productContainer">
-            <app-product *ngFor="let product of products" [product]="product"></app-product>
+            <app-product *ngFor="let product of products" [product]="product" routerLink="/investment-component"></app-product>
         </div>
     </div>
 
