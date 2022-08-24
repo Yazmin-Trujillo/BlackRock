@@ -12,13 +12,16 @@ import { FormsModule } from '@angular/forms';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { HomeComponent } from './components/home/home.component';
 import { PerformanceComponent } from './components/performance/performance.component';
+import {HttpClientModule} from '@angular/common/http';
+import { ProductComponent } from './components/product/product.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     NavBarComponent,
     HomeComponent,
-    PerformanceComponent
+    PerformanceComponent,
+    ProductComponent
   ],
   imports: [
     BrowserModule,
@@ -28,7 +31,8 @@ import { PerformanceComponent } from './components/performance/performance.compo
     ButtonModule,
     SidebarModule,
     ToolbarModule,
-    InputTextModule
+    InputTextModule,
+    HttpClientModule
     
   ],
   providers: [],
