@@ -1,15 +1,28 @@
 .homeContainer {
-   p{color: white;}
-    .productContainer {
-        margin-top: 2.625rem;
-        display: flex;
-        flex-direction: column;
-        // display: grid;
-        // grid-template-columns: repeat(2, minmax(0, 1fr));
-        padding-left: 1rem;
-        padding-right: 1rem;
-        gap: 0.5rem;
+    color: white;
 
-
+    .textSection {
+        padding: 1rem;
     }
+
+    .productSection {
+
+        .productHeader {
+            display: flex;
+            justify-content: center;
+            font-size: 1.2rem;
+            color: white;
+        }
+
+        .productContainer {
+            display: flex;
+            flex-direction: column;
+            // display: grid;
+            // grid-template-columns: repeat(2, minmax(0, 1fr));
+            padding-left: 1rem;
+            padding-right: 1rem;
+            gap: 0.5rem;
+        }
+    }
+
 }
