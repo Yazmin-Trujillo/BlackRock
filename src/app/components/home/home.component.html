@@ -1,1 +1,31 @@
-<p>General!</p>
+<div class="homeContainer">
+    <div class="textSection">
+        <p>Un fondo de inversión es el resultado de juntar el capital de distintos inversores/personas/cliente, con el
+            cual
+            se dispone para invertir en el mercado</p>
+        <!-- <p>Un fondo de inversión es un instrumento finaciera del cual se dispone para invertir en el mercado</p> -->
+        <p>¿Pero por que elegir un Fondo de Inversión</p>
+        <p>El objetivo general de un fondo de inversión es proporcionar un rendimiento a todos aquellos inversores que
+            han
+            decidido aportar capital.</p>
+        <p>Podemos clasificarlos de acuerdo a su horizonte de tiempo:</p>
+        <ul>
+            <li type="circle">Corto plazo</li>
+            <li type="circle">Mediano plazo</li>
+            <li type="circle">Largo plazo</li>
+        </ul>
+
+        <!-- <p>Los fondos de inversión en México se tratan de mecanismos que reúnen a un grupo de personas como tú, para que
+            inviertan sus ahorros en conjunto y así puedan acceder a mejores oportunidades, es por eso que puedes
+            comenzar a
+            invertir desde cantidades muy bajas</p> -->
+    </div>
+
+    <div class="productSection">
+        <p class="productHeader">Estos son los productos en los que puedes invertir</p>
+        <div class="productContainer">
+            <app-product *ngFor="let product of products" [product]="product"></app-product>
+        </div>
+    </div>
+
+</div>

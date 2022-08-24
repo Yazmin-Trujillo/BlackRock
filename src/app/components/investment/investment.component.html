@@ -1,0 +1,15 @@
+<div *ngFor="let elemento of products" class="body">
+  <div class="conteiner">
+    <div class="section">
+      <h1> {{elemento.name}} </h1>
+      <p class="ticker">{{elemento.ticket}}</p>
+      <p>{{elemento.description}}</p>
+      <h2>Caracteristicas</h2>
+      <p><span>Horizonte de inversión:</span> {{elemento.investmentHorizon}}s</p>
+      <p> <span>Horario de operación: </span> {{elemento.operationHours}}</p>
+      <p> <span>Liquidación:</span>  {{elemento.settlement}}</p>
+      <p> <span>Activos:</span>  {{elemento.assets}}</p>
+    </div>
+  </div>
+</div>
+

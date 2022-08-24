@@ -21,6 +21,9 @@ import { SecondQuestionComponent } from './components/second-question/second-que
 import { ThirdQuestionComponent } from './components/third-question/third-question.component';
 import { FourthQuestionComponent } from './components/fourth-question/fourth-question.component';
 import { FifthQuestionComponent } from './components/fifth-question/fifth-question.component';
+import {HttpClientModule} from '@angular/common/http';
+import { ProductComponent } from './components/product/product.component';
+import { InvestmentComponent } from './components/investment/investment.component'
 
 @NgModule({
   declarations: [
@@ -33,7 +36,10 @@ import { FifthQuestionComponent } from './components/fifth-question/fifth-questi
     SecondQuestionComponent,
     ThirdQuestionComponent,
     FourthQuestionComponent,
-    FifthQuestionComponent
+    FifthQuestionComponent,
+    ProductComponent,
+    InvestmentComponent
+
   ],
   imports: [
     BrowserModule,
@@ -47,7 +53,7 @@ import { FifthQuestionComponent } from './components/fifth-question/fifth-questi
     SelectButtonModule,
     CardModule,
     StyleClassModule,
-         
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
