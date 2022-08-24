@@ -13,7 +13,8 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { HomeComponent } from './components/home/home.component';
 import { PerformanceComponent } from './components/performance/performance.component';
 import {HttpClientModule} from '@angular/common/http';
-import { ProductComponent } from './components/product/product.component'
+import { ProductComponent } from './components/product/product.component';
+import { InvestmentComponent } from './components/investment/investment.component'
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ProductComponent } from './components/product/product.component'
     NavBarComponent,
     HomeComponent,
     PerformanceComponent,
-    ProductComponent
+    ProductComponent,
+    InvestmentComponent
   ],
   imports: [
     BrowserModule,
@@ -33,7 +35,7 @@ import { ProductComponent } from './components/product/product.component'
     ToolbarModule,
     InputTextModule,
     HttpClientModule
-    
+
   ],
   providers: [],
   bootstrap: [AppComponent]
