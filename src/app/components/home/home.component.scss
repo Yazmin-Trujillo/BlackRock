@@ -1,0 +1,15 @@
+.homeContainer {
+   p{color: white;}
+    .productContainer {
+        margin-top: 2.625rem;
+        display: flex;
+        flex-direction: column;
+        // display: grid;
+        // grid-template-columns: repeat(2, minmax(0, 1fr));
+        padding-left: 1rem;
+        padding-right: 1rem;
+        gap: 0.5rem;
+
+
+    }
+}
