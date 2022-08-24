@@ -9,6 +9,8 @@ export class NavBarComponent implements OnInit {
   displaySidebar = false;
   searchText = '';
 
+  loading = [false, false, false, false]
+
   constructor() { }
 
   ngOnInit(): void {
@@ -21,4 +23,9 @@ export class NavBarComponent implements OnInit {
   hideSidebar() {
     this.displaySidebar = false
   }
+
+  load(index:any) {
+    this.loading[index] = true;
+    setTimeout(() => this.loading[index] = false, 1000);
+}
 }
