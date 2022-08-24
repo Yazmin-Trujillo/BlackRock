@@ -1,6 +1,4 @@
 <p>General!</p>
-
 <div *ngFor="let product of products">
-    <span>{{product.ticket}}</span>
-    <span>{{product.name}}</span>
+    <app-product [product]="product"></app-product>
 </div>
