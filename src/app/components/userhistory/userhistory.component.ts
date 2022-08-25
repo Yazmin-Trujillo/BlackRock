@@ -19,11 +19,12 @@ export class UserhistoryComponent implements OnInit {
 
 
     this.products = [
-        { fecha: '08-22', producto: 'BLK0101', acumulado: '5.28' , anualizado:'29.36'}  ]
+        { fecha: '06-22',  acumulado: '3.04%' , anualizado:'4.92%'},
+        { fecha: '07-22',  acumulado: '13.30%' , anualizado:'4.25%'},
+        { fecha: '08-22',  acumulado: '29.36%' , anualizado:'5.28%'}  ]
 
     this.cols =[
         { field: 'fecha', header: 'Fecha' },
-        { field: 'producto', header: 'Producto' },
         { field: 'acumulado', header: 'Acumulado' },
         { field: 'anualizado', header: 'Anualizado' }
     ]
