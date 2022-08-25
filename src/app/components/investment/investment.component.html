@@ -1,15 +1,34 @@
 <div *ngFor="let elemento of products" class="body">
   <div class="conteiner">
     <div class="section">
-      <h1> {{elemento.name}} </h1>
-      <p class="ticker">{{elemento.ticket}}</p>
-      <p>{{elemento.description}}</p>
+      <h1>{{ elemento.name }}</h1>
+      <h2 class="ticker">{{ elemento.ticket }}</h2>
+
       <h2>Caracteristicas</h2>
-      <p><span>Horizonte de inversión:</span> {{elemento.investmentHorizon}}s</p>
-      <p> <span>Horario de operación: </span> {{elemento.operationHours}}</p>
-      <p> <span>Liquidación:</span>  {{elemento.settlement}}</p>
-      <p> <span>Activos:</span>  {{elemento.assets}}</p>
+      <p-splitter [style]="{ height: '180px' }" styleClass="mb-10" [panelSizes]="[20, 20]" [minSizes]="[4, 4]" layout="vertical">
+        <ng-template pTemplate>
+          <p>{{ elemento.description }}</p>
+        </ng-template>
+        <ng-template pTemplate>
+          <p> <span> Horizonte de inversión:</span> {{ elemento.investmentHorizon }} </p>
+          <p> <span> Horario de operación: </span> {{ elemento.operationHours }} </p>
+          <p><span> Liquidación:</span> {{ elemento.settlement }}</p>
+          <p><span> Activos:</span> {{ elemento.assets }}</p>
+        </ng-template>
+      </p-splitter>
+
+      <section>
+        <p>Composición de la cartera</p>
+        <img width="300" [src]="elemento.composicion" />
+
+        <p>Rendimiento</p>
+        <img width="300" [src]="elemento.rendimiento" />
+      </section>
+
+      <section>
+        <button pButton type="button" label="Comprar" class="p-button-warning" ></button>
+      </section>
+
     </div>
   </div>
 </div>
-

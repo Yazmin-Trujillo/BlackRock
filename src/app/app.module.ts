@@ -24,6 +24,10 @@ import { FifthQuestionComponent } from './components/fifth-question/fifth-questi
 import {HttpClientModule} from '@angular/common/http';
 import { ProductComponent } from './components/product/product.component';
 import { InvestmentComponent } from './components/investment/investment.component'
+import { SplitterModule } from 'primeng/splitter';
+import { DividerModule } from 'primeng/divider';
+
+
 
 @NgModule({
   declarations: [
@@ -53,7 +57,11 @@ import { InvestmentComponent } from './components/investment/investment.componen
     SelectButtonModule,
     CardModule,
     StyleClassModule,
-    HttpClientModule
+    HttpClientModule,
+    SplitterModule,
+    DividerModule,
+
+
   ],
   providers: [],
   bootstrap: [AppComponent]
