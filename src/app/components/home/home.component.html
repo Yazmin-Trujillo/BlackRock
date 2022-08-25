@@ -2,24 +2,25 @@
     <div>
         <p-overlayPanel #op>
             <ng-template pTemplate>
+              <p class="titles firsttitle">¿Qué es un Fondo de Inversión?</p>
                 <p>Un fondo de inversión es el resultado de juntar el capital de distintos inversores/personas/cliente,
                     con
                     el
                     cual
                     se dispone para invertir en el mercado</p>
                 <!-- <p>Un fondo de inversión es un instrumento finaciera del cual se dispone para invertir en el mercado</p> -->
-                <p>¿Pero por que elegir un Fondo de Inversión</p>
+                <p class="titles">¿Por qué elegir un Fondo de Inversión?</p>
                 <p>El objetivo general de un fondo de inversión es proporcionar un rendimiento a todos aquellos
                     inversores
                     que
                     han
                     decidido aportar capital.</p>
-                <p>Podemos clasificarlos de acuerdo a su horizonte de tiempo:</p>
-                <ul>
-                    <li type="circle">Corto plazo</li>
-                    <li type="circle">Mediano plazo</li>
-                    <li type="circle">Largo plazo</li>
-                </ul>
+                <p class="titles">Se clasifican de acuerdo a su horizonte de tiempo:</p>
+
+                    <p class="circle">Corto plazo</p>
+                    <p class="circle">Mediano plazo</p>
+                    <p class="circle">Largo plazo</p>
+
             </ng-template>
         </p-overlayPanel>
         <div class="questionButton">
@@ -39,14 +40,14 @@
             </ng-template>
         </p-carousel>
     </div>
-    <!-- 
+    <!--
     <p-dialog [(visible)]="display" [modal]="true" appendTo="body">
         <app-investment [product]="product"></app-investment>
     </p-dialog> -->
     <!-- <div class="separador">
         <div class="productGallery">Tus productos</div>
     </div> -->
-   
+
     <div class="tableProducts">
         <p-table [value]="userProducts" responsiveLayout="scroll" class="tableP">
             <ng-template pTemplate="caption">
