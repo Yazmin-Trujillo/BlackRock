@@ -26,13 +26,14 @@
     display: flex;
     justify-content: center;
     font-size: 1.4rem;
-    background: #FFCE00;
+    background: #EDB71A;
     color: black;
     margin-bottom: 0.5rem;
+    font-weight: bold;
 }
 
 ::ng-deep .questionButton .p-button-link {
-    color: #FFCE00;
+    color: #EDB71A;
 }
 
 .productContainer {
@@ -53,19 +54,13 @@
     justify-content: center;
     font-size: 1.3rem;
     // border: 1px solid #FFCE00;
-    background: #FFCE00;
+    background: #EDB71A;
     color: black;
 }
 
 ::ng-deep .p-datatable {
-    border: 5px solid #FFCE00;
+    border: 5px solid #EDB71A;
     background: black !important;
-}
-
-.tableTitle {
-    // background: blue !important;
-    // display: flex;
-    // justify-content: center;
 }
 .tableCell{
     text-align: center !important;
@@ -79,4 +74,21 @@
 }
 .separador{
     margin-top: 1rem;
+}
+::ng-deep .p-overlaypanel .p-overlaypanel-content{
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-weight: normal;
+}
+::ng-deep .p-datatable .p-datatable-thead > tr > th{
+  background-color: #FB9CB3;
+  color: black;
+}
+.titles{
+  font-weight: bold;
+  color: #EDB71A;
+}
+.firsttitle{
+  font-size: 25px;
 }
