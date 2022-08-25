@@ -5,21 +5,21 @@
 <section class="fifth-question">
     <h5 class="title-question">¿Que harías si tu inversión comienza a perder valor?</h5>
     <section class="fifth-answers">
-        <p-card  [style]="{'width':'80%', 'height': '80%', 'margin-bottom': '2em', 'background': '#F0BF4C', 'text-align': 'center'}" routerLink="/result">
+        <p-card  [style]="{'width':'80%', 'height': '80%', 'margin-bottom': '2em', 'background': '#F0BF4C', 'text-align': 'center'}"  (click)="setResFifth('Vender', 5)">
             <ng-template pTemplate="header">
                 <img class="img-quiz" alt="Card" src="../../../assets/seller.png">
             </ng-template>
             <p>Vender</p>
         </p-card>
         
-        <p-card  [style]="{'width':'78%', 'height': '80%','margin-bottom': '2em', 'background': '#F0BF4C', 'text-align': 'center'}" routerLink="/result">
+        <p-card  [style]="{'width':'78%', 'height': '80%','margin-bottom': '2em', 'background': '#F0BF4C', 'text-align': 'center'}"  (click)="setResFifth('Esperar', 10)">
             <ng-template pTemplate="header">
                 <img class="img-quiz" alt="Card" src="../../../assets/expert.png">
             </ng-template>
             <p>Esperar</p>
         </p-card>
         
-        <p-card  [style]="{'width':'80%', 'height': '80%', 'margin-bottom': '2em', 'background': '#F0BF4C', 'text-align': 'center'}" routerLink="/result">
+        <p-card  [style]="{'width':'80%', 'height': '80%', 'margin-bottom': '2em', 'background': '#F0BF4C', 'text-align': 'center'}"  (click)="setResFifth('Consultar a un experto', 15)">
             <ng-template pTemplate="header">
                 <img class="img-quiz" alt="Card" src="../../../assets/wait.png">
             </ng-template>
