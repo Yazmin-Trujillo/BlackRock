@@ -45,7 +45,7 @@ export class UseraccountComponent implements OnInit {
             label: 'invertido',
               data: [50, 80, 20],
               backgroundColor: [
-                "#f3d58d",
+                "#F0BF4C",
                 "#FF4713",
                 "#FFFFFF"      
             ],
