@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { reduce } from 'rxjs';
 
 @Component({
   selector: 'app-useraccount',
@@ -8,6 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class UseraccountComponent implements OnInit {
 
   data: any;
+  options: any;
 
   constructor() { 
     this.data = {
@@ -33,6 +35,21 @@ export class UseraccountComponent implements OnInit {
           }
       ]
   }
+
+  this.options = {
+    plugins: {
+      tooltips: {
+          mode: 'index',
+          intersect: false
+      },
+      legend: {
+          labels: {
+              color: '#FF4713'
+          }
+      }
+  },
+
+};
   
   
   }

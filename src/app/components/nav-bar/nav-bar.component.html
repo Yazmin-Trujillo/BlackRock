@@ -14,15 +14,17 @@
 </p-toolbar>
 
 <p-sidebar [(visible)]="displaySidebar">
-  <button pButton pRipple type="button" label="Perfílate como inversor" class="p-button-text" icon="pi pi-list"
-  routerLink="/quiz" (click)="hideSidebar()"></button>
-  <button pButton pRipple type="button" label="General" class="p-button-text" icon="pi pi-home" routerLink="/home"
-    (click)="hideSidebar()"></button>
-  <button pButton pRipple type="button" label="Rendimiento" class="p-button-text" icon="pi pi-chart-pie "
-    routerLink="/performance" (click)="hideSidebar()"></button>
-  <button pButton pRipple type="button" label="Mi Inversión" class="p-button-text" icon="pi pi-user "
-    routerLink="/useraccount" (click)="hideSidebar()"></button>
+  <div class="quizButton">
+    <button pButton pRipple type="button" label="Perfílate como inversor" class="p-button-text" icon="pi pi-list" routerLink="/quiz"
+      (click)="hideSidebar()"></button>
+  </div>
+  <div class="navigationButtons">
+    <button pButton pRipple type="button" label="General" class="p-button-text" icon="pi pi-home" routerLink="/home"
+      (click)="hideSidebar()"></button>
+    <button pButton pRipple type="button" label="Mi Inversión" class="p-button-text" icon="pi pi-chart-pie "
+      routerLink="/usseraccount" (click)="hideSidebar()"></button>
     <button pButton pRipple type="button" label="Historial" class="p-button-text" icon="pi pi-chart-line"
     routerLink="/userhistory" (click)="hideSidebar()"></button>
-  
- </p-sidebar>
+  </div>
+
+</p-sidebar>

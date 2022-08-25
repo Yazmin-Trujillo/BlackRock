@@ -8,29 +8,55 @@ import { Component, OnInit } from '@angular/core';
 export class UserhistoryComponent implements OnInit {
 
   data: any;
+  options: any;
 
   constructor() {
     this.data = {
-      labels: ['MAYO', 'JUNIO', 'AGOSTO'] ,
-    
+      labels: ['Mayo', 'Junio', 'Agosto'],
       datasets: [
           {
-              label: 'First Dataset',
-              data: [20, 40, 40],
-              backgroundColor: [
-                '#7E57C2',
-                '#66BB6A',
-                '#FFCA28'    
-            ],
-            hoverBackgroundColor: [
-              "#66BB6A",
-              "#056DAE",
-              "#36A2EB"
-              
-            ]
+              label: 'Monto Ingreso',
+              backgroundColor: '#F0BF4C',
+              data: [20, 40, 40]
+          },
+          {
+              label: 'Ganancias',
+              backgroundColor: '#FF4713',
+              data: [5, 3, 1]
           }
       ]
+  };
+
+  this.options = {
+    plugins: {
+      tooltips: {
+          mode: 'index',
+          intersect: false
+      },
+      legend: {
+          labels: {
+              color: 'white'
+          }
+      }
+  },
+  scales: {
+      x: {
+          stacked: true,
+          ticks: {
+              color: 'yellow'
+          },
+        
+      },
+      y: {
+          stacked: true,
+          ticks: {
+              color: '#495057'
+          },
+         
+      }
   }
+};
+
    }
 
   ngOnInit(): void {
