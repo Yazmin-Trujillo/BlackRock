@@ -2,7 +2,6 @@ import { NgModule, Component } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
 import { InvestmentComponent } from './components/investment/investment.component';
-import { PerformanceComponent } from './components/performance/performance.component';
 import { QuizComponent } from './components/quiz/quiz.component';
 import { FirstQuestionComponent } from './components/first-question/first-question.component';
 import { SecondQuestionComponent } from './components/second-question/second-question.component';
@@ -16,7 +15,6 @@ import { UserhistoryComponent } from './components/userhistory/userhistory.compo
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
-  { path: 'performance', component: PerformanceComponent},
   { path: 'quiz', component: QuizComponent},
   { path: 'first-question', component: FirstQuestionComponent},
   { path: 'second-question', component: SecondQuestionComponent},

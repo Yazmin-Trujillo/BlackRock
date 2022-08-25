@@ -1,9 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {ButtonModule} from 'primeng/button';
 import {SidebarModule} from 'primeng/sidebar';
@@ -15,10 +13,8 @@ import {ChartModule} from 'primeng/chart';
 import { FormsModule } from '@angular/forms';
 import {TableModule} from 'primeng/table';
 import {StyleClassModule} from 'primeng/styleclass';
-
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { HomeComponent } from './components/home/home.component';
-import { PerformanceComponent } from './components/performance/performance.component';
 import { QuizComponent } from './components/quiz/quiz.component';
 import { FirstQuestionComponent } from './components/first-question/first-question.component';
 import { SecondQuestionComponent } from './components/second-question/second-question.component';
@@ -41,7 +37,6 @@ import {DialogModule} from 'primeng/dialog';
     AppComponent,
     NavBarComponent,
     HomeComponent,
-    PerformanceComponent,
     QuizComponent,
     FirstQuestionComponent,
     SecondQuestionComponent,
@@ -51,11 +46,7 @@ import {DialogModule} from 'primeng/dialog';
     ProductComponent,
     InvestmentComponent,
     UseraccountComponent,
-
-    UserhistoryComponent
-
     UserhistoryComponent,
-
 
   ],
   imports: [
