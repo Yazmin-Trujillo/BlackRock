@@ -11,6 +11,7 @@ import { ThirdQuestionComponent } from './components/third-question/third-questi
 import { FourthQuestionComponent } from './components/fourth-question/fourth-question.component';
 import { FifthQuestionComponent } from './components/fifth-question/fifth-question.component';
 import { ProductComponent } from './components/product/product.component';
+import { ResultComponent } from './components/result/result.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -24,6 +25,7 @@ const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'invstment', component: InvestmentComponent},
   { path: 'p', component: ProductComponent},
+  { path: 'result', component: ResultComponent},
 ];
 
 @NgModule({
