@@ -5,61 +5,25 @@
 <h5 class="title-userhistory">Movimientos</h5>
 
 <section class="header-history">
-<p-card  [style]="{'width':'75%', 'height': '25%', 'margin-bottom': '2em', 'background': '#FD9BB4', 'text-align': 'center'}" routerLink="/home">
-    <ng-template pTemplate="header">
-        <p>Fecha de Ingreso</p>
-     </ng-template>
- 
-</p-card>
 
-<p-card  [style]="{'width':'75%', 'height': '25%', 'margin-bottom': '2em', 'background': '#FD9BB4', 'text-align': 'center'}" routerLink="/home">
-    <ng-template pTemplate="header">
-        <p>Fondo de Inversión</p>
-     </ng-template>
-  
-</p-card>
 
-<p-card  [style]="{'width':'75%', 'height': '25%', 'background': '#FD9BB4', 'text-align': 'center'}" routerLink="/home">
-    <ng-template pTemplate="header">
-        <p>Monto Ingreso</p>
-     </ng-template>
- </p-card>
-
- <p-card  [style]="{'width':'75%', 'height': '25%', 'background': '#FD9BB4', 'text-align': 'center'}" routerLink="/home">
-    <ng-template pTemplate="header">
-        <p>Monto actual</p>
-     </ng-template>
- </p-card>
-
+    <p-table [columns]="cols" [value]="products" responsiveLayout="scroll"  [style]="{'width':'100%', 'padding':'40px','margin-rigth': '4em', 'font-size': '10px', 'font-family': 'Ubuntu'}">
+        <ng-template pTemplate="header" let-columns>
+            <tr>
+                <th *ngFor="let col of columns">
+                    {{col.header}}
+                </th>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-rowData let-columns="columns">
+            <tr>
+                <td *ngFor="let col of columns">
+                    {{rowData[col.field]}}
+                </td>
+            </tr>
+        </ng-template>
+    </p-table>
+    
 </section>
 
-<section class="body-history">
-<p-card  [style]="{'width':'100%', 'height': '40%', 'background': '#FD9BB4', 'text-align': 'center'}" routerLink="/home">
-    <ng-template pTemplate="header">
-        <p>14-05-22      23-06-22     11-08-22 </p>
-           </ng-template>
- </p-card>
-
- <p-card  [style]="{'width':'100%', 'height': '40%', 'background': '#FD9BB4', 'text-align': 'center'}" routerLink="/home">
-    <ng-template pTemplate="header">
-        <p>BLKREAL      BLKUSLQ     BLKGLO03 </p>
-           </ng-template>
- </p-card>
-
- <p-card  [style]="{'width':'100%', 'height': '40%', 'background': '#FD9BB4', 'text-align': 'center'}" routerLink="/home">
-    <ng-template pTemplate="header">
-        <p>$1,000,000      $2,000,000      $2,000,000  </p>
-           </ng-template>
- </p-card>
-
- <p-card  [style]="{'width':'100%', 'height': '40%', 'background': '#FD9BB4', 'text-align': 'center'}" routerLink="/home">
-    <ng-template pTemplate="header">
-        <p>$1,000,120      $2,000,210     $2,000,090 </p>
-           </ng-template>
- </p-card>
-
-</section>
-
-<p-chart type="bar" [data]="data"  [options]="options"></p-chart>
-
- 
+<p-chart type="line" [data]="data"  [options]="options" ></p-chart>

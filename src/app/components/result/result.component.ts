@@ -14,7 +14,6 @@ export class ResultComponent implements OnInit {
 
   constructor(
     private profileService: ProfilerService,
-    private router: Router
     ) {
       this.profile='Perfil de inversion';
       this.fondos= 'Descubre el fondo de inversión ideal para ti ';
@@ -29,7 +28,7 @@ export class ResultComponent implements OnInit {
     } else if (total > 39 && total < 65) {
       this.profile = 'Moderado';  
     } else if (total > 65) {
-      this.profile = 'perfil 2';  
+      this.profile = 'Agresivo';  
     } else {
       this.profile = 'Contesta las preguntas para saber tu perfil'
     }

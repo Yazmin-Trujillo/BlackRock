@@ -12,13 +12,17 @@
     text-align: center;
     font-size: large;
     color: white;
+    font-weight: bold;
+   
 }
 
 .quiz-button{
     background: red;
 }
 .img-quiz{
-width: 60%;
+width: 80%;
+height: 80%;
+margin-top: 1rem;
 
 }
 
@@ -29,22 +33,25 @@ width: 60%;
   flex-direction: row;
   justify-content: center;
   margin-left: 4%;
+  p{
+    font-weight: bold;
+  }
 }
 
-  /* ::ng-deep .p-button{
-    
-      background: red;
-      background-color: red;
-   
-  }  */
+.controls{
+display: flex;
+justify-content: space-between;
+p{
+  color: white;
+  font-size: 1.5em;
+}
+ }
 
-  /* ::ng-deep {
-    .ui-selectbutton .ui-button.ui-state-default {
-
-      background-color: red;
-      
-      }
-  } */
-  
-  
-
+ .iconsC{
+  color: white;
+  font-size: 2em;
+  i{
+    margin-left: .5em;
+  }
+ }
+ 
