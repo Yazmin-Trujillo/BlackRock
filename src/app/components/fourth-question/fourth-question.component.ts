@@ -21,7 +21,7 @@ export class FourthQuestionComponent implements OnInit {
   }
 
   setResFourth(name: string, value: number){
-    const res = { name, value, id: 1 }
+    const res = { name, value, id: 4 }
     this.profileService.addRes(res);
     this.router.navigateByUrl('/fifth-question');
     console.log(this.profileService.questions)

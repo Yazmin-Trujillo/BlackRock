@@ -19,7 +19,7 @@ export class SecondQuestionComponent implements OnInit {
   }
 
   setResSecond(name: string, value: number){
-    const res = { name, value, id: 1 }
+    const res = { name, value, id: 2 }
     this.profileService.addRes(res);
     this.router.navigateByUrl('/third-question');
     console.log(this.profileService.questions)

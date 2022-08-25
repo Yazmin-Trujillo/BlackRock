@@ -21,7 +21,7 @@ export class FifthQuestionComponent implements OnInit {
   }
 
   setResFifth(name: string, value: number){
-    const res = { name, value, id: 1 }
+    const res = { name, value, id: 5 }
     this.profileService.addRes(res);
     this.router.navigateByUrl('/result');
     console.log(this.profileService.questions)
