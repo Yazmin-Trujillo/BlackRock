@@ -2,28 +2,28 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Square+Peg&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
 
-<h5 class="title-userhistory">Movimientos</h5>
+<h5 class="title-useraccount"><i class="pi pi-user"></i>
+    Buenas tardes, Paula Flores</h5>
 
-<section class="header-history">
+<p class="info-useraccount">Total Invertido $ 15,000.00 </p>
 
 
-    <p-table [columns]="cols" [value]="products" responsiveLayout="scroll"  [style]="{'width':'100%', 'padding':'40px','margin-rigth': '4em', 'font-size': '10px', 'font-family': 'Ubuntu'}">
-        <ng-template pTemplate="header" let-columns>
-            <tr>
-                <th *ngFor="let col of columns">
-                    {{col.header}}
-                </th>
-            </tr>
-        </ng-template>
-        <ng-template pTemplate="body" let-rowData let-columns="columns">
-            <tr>
-                <td *ngFor="let col of columns">
-                    {{rowData[col.field]}}
-                </td>
-            </tr>
-        </ng-template>
-    </p-table>
-    
-</section>
 
-<p-chart type="line" [data]="data"  [options]="options" ></p-chart>
+<p-table [columns]="cols" [value]="products" responsiveLayout="scroll"  [style]="{'width':'100%', 'padding':'20px','margin-rigth': '4em', 'font-size': '10px', 'font-family': 'Ubuntu'}">
+    <ng-template pTemplate="header" let-columns>
+        <tr>
+            <th *ngFor="let col of columns">
+                {{col.header}}
+            </th>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-rowData let-columns="columns">
+        <tr>
+            <td *ngFor="let col of columns">
+                {{rowData[col.field]}}
+            </td>
+        </tr>
+    </ng-template>
+</p-table>
+
+<p-chart type="bar" [data]="data" [options]="options"></p-chart>
