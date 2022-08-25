@@ -10,21 +10,44 @@ export class UseraccountComponent implements OnInit {
 
   data: any;
   options: any;
+  products: any;
+  cols: any;
 
   constructor() { 
+
+    this.products = [
+      { producto: 'BLKREAL', invertido: '$ 5,000' , rendimiento:'1.3%'},
+      { producto: 'BLKUSLQ', invertido: '$ 8,000' , rendimiento:'3.3%'} ,
+      { producto: 'BLKGLO3', invertido: '$ 2,000' , rendimiento:'4.8%'} ]
+
+  this.cols =[
+      { field: 'producto', header: 'Producto' },
+      { field: 'invertido', header: 'Invertido' },
+      { field: 'rendimiento', header: 'Rendimiento' }
+  ],
     this.data = {
-      labels: ['BLKREAL $1,000,000 rendimiento:1.3%', 
-      'BLKUSLQ $2,000,000 rendimiento:3.3%', 
-      'BLKGLO3 $2,000,000 rendimiento:4.8%'] ,
+      labels: ['BLKREAL', 'BLKUSLQ','BLKGLO03'] ,
     
       datasets: [
+
+        {
+          type:"line",  
+          label: 'rendimiento',
+          borderWidth: 2,
+          fill: false,
+          data: [10.3, 30.3, 40.8],
+           borderColor: [
+              "#056DAE"      
+          ]
+        },
           {
-              label: 'First Dataset',
-              data: [40, 40, 20],
+            type:"bar",  
+            label: 'invertido',
+              data: [50, 80, 20],
               backgroundColor: [
-                "#F0BF4C",
+                "#f3d58d",
                 "#FF4713",
-                "#FD9BB4"      
+                "#FFFFFF"      
             ],
             hoverBackgroundColor: [
               "#66BB6A",
@@ -33,6 +56,7 @@ export class UseraccountComponent implements OnInit {
               
             ]
           }
+        
       ]
   }
 
@@ -44,7 +68,7 @@ export class UseraccountComponent implements OnInit {
       },
       legend: {
           labels: {
-              color: '#FF4713'
+              color: '#FFFFFF'
           }
       }
   },
