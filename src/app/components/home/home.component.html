@@ -24,7 +24,7 @@
         </p-overlayPanel>
         <div class="questionButton">
             <p-button label="¿Que es?" styleClass="p-button-link" (click)="op.toggle($event)"></p-button>
-                  </div>
+        </div>
 
     </div>
     <div class="productContainer">
@@ -34,14 +34,46 @@
                 <div class="productGallery">Nuestros productos</div>
             </ng-template>
             <ng-template let-product pTemplate="item">
-                <app-product [product]="product" >
+                <app-product [product]="product">
                 </app-product>
             </ng-template>
         </p-carousel>
     </div>
-<!-- 
+    <!-- 
     <p-dialog [(visible)]="display" [modal]="true" appendTo="body">
         <app-investment [product]="product"></app-investment>
     </p-dialog> -->
-    
+    <!-- <div class="separador">
+        <div class="productGallery">Tus productos</div>
+    </div> -->
+   
+    <div class="tableProducts">
+        <p-table [value]="userProducts" responsiveLayout="scroll" class="tableP">
+            <ng-template pTemplate="caption">
+                <div class="table-header">
+                    Tus productos
+                </div>
+            </ng-template>
+
+            <ng-template pTemplate="header">
+                <tr class="tableTitle" >
+                    <th class="tableCell">Ticket</th>
+                    <th class="tableCell">Nombre</th>
+                    <th class="tableCell">Activos</th>
+                </tr>
+            </ng-template>
+
+            <ng-template pTemplate="body" class="" let-product>
+                <tr>
+                    <td class="columnT">{{product.ticket}}</td>
+                    <td class="columnT">{{product.name}}</td>
+                    <td class="columnT">{{product.assets}}</td>
+                    <!-- <td>{{product.category}}</td>
+                <td>{{product.quantity}}</td> -->
+                </tr>
+            </ng-template>
+        </p-table>
+    </div>
+
+
 </div>

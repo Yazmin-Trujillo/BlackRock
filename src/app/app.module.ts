@@ -51,7 +51,7 @@ import {DialogModule} from 'primeng/dialog';
     ProductComponent,
     InvestmentComponent,
     UseraccountComponent,
-    UserhistoryComponent, 
+    UserhistoryComponent
 
   ],
   imports: [
@@ -69,7 +69,7 @@ import {DialogModule} from 'primeng/dialog';
     StyleClassModule,
     HttpClientModule,
     SplitterModule,
-    TableModule
+    TableModule,
     OverlayPanelModule,
     CarouselModule,
     DialogModule
