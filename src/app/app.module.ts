@@ -27,14 +27,14 @@ import { FourthQuestionComponent } from './components/fourth-question/fourth-que
 import { FifthQuestionComponent } from './components/fifth-question/fifth-question.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ProductComponent } from './components/product/product.component';
-
+import { SplitterModule } from 'primeng/splitter';
+import { DividerModule } from 'primeng/divider';
 import { InvestmentComponent } from './components/investment/investment.component';
 import { UseraccountComponent } from './components/useraccount/useraccount.component';
 import { UserhistoryComponent } from './components/userhistory/userhistory.component';
 import { OverlayPanelModule } from 'primeng/overlaypanel';
 import {CarouselModule} from 'primeng/carousel';
 import {DialogModule} from 'primeng/dialog';
-
 
 @NgModule({
   declarations: [
@@ -68,11 +68,11 @@ import {DialogModule} from 'primeng/dialog';
     ChartModule,
     StyleClassModule,
     HttpClientModule,
+    SplitterModule,
     TableModule
     OverlayPanelModule,
     CarouselModule,
     DialogModule
-
   ],
   providers: [],
   bootstrap: [AppComponent]
