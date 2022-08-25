@@ -36,10 +36,12 @@
 
 }
 
-// ::ng-deep .p-button.p-button-icon-only {
-//     background: black;
-//     border: 1px solid #FFCE00;
-// }
+::ng-deep .p-button.p-button-icon-only {
+    //     background: black;
+    //     border: 1px solid #FFCE00;
+    background: transparent;
+    border: black;
+}
 
 ::ng-deep .p-sidebar.p-sidebar-left {
     top: 5.3rem;
@@ -53,4 +55,8 @@
 .p-button-label {
     text-align: start;
     margin-left: 0.6rem;
+}
+
+::ng-deep .pi{
+    font-size: 1.5rem;
 }
