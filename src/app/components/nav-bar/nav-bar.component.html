@@ -1,4 +1,4 @@
-<p-toolbar >
+<p-toolbar>
   <div class="p-toolbar-group-left">
     <!-- <p-button icon="pi pi-bars" (click)="displaySidebar=true"></p-button> -->
     <p-button icon="pi pi-bars" (click)="showSidebar()"></p-button>
@@ -7,18 +7,23 @@
   <div class="p-toolbar-group-right">
     <!-- <span class="p-input-icon-left">
       <i class="pi pi-search"></i> -->
-      <!-- <input type="text" pInputText placeholder="Search" [(ngModel)]="searchText" /> -->
+    <!-- <input type="text" pInputText placeholder="Search" [(ngModel)]="searchText" /> -->
     <!-- </span>
     <p-button icon="pi pi-search" [loading]="loading[2]" (onClick)="load(2)"></p-button> -->
   </div>
 </p-toolbar>
 
 <p-sidebar [(visible)]="displaySidebar">
-  <button pButton pRipple type="button" label="General" class="p-button-text" icon="pi pi-home" routerLink="/home"
-    (click)="hideSidebar()"></button>
-  <button pButton pRipple type="button" label="Rendimiento" class="p-button-text" icon="pi pi-chart-pie "
-    routerLink="/performance" (click)="hideSidebar()"></button>
-  <button pButton pRipple type="button" label="Historial" class="p-button-text" icon="pi pi-chart-line"></button>
-  <button pButton pRipple type="button" label="Encuesta" class="p-button-text" icon="pi pi-list"
-  routerLink="/quiz" (click)="hideSidebar()"></button>
+  <div class="quizButton">
+    <button pButton pRipple type="button" label="Encuesta" class="p-button-text" icon="pi pi-list" routerLink="/quiz"
+      (click)="hideSidebar()"></button>
+  </div>
+  <div class="navigationButtons">
+    <button pButton pRipple type="button" label="General" class="p-button-text" icon="pi pi-home" routerLink="/home"
+      (click)="hideSidebar()"></button>
+    <button pButton pRipple type="button" label="Rendimiento" class="p-button-text" icon="pi pi-chart-pie "
+      routerLink="/performance" (click)="hideSidebar()"></button>
+    <button pButton pRipple type="button" label="Historial" class="p-button-text" icon="pi pi-chart-line"></button>
+  </div>
+
 </p-sidebar>
