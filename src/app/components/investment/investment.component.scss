@@ -1,14 +1,4 @@
-.body{
-  background-color: black;
-  height: 450px;
-  color: aliceblue;
-  margin: 0;
-}
-.conteiner{
-  height: 450px;
-  background-color: white;
-  margin: 15px;
-}
+
 .section{
   height: 450px;
   margin: 5px;
@@ -19,6 +9,39 @@
 span{
   font-weight: bold;
 }
-h1, .ticker{
+.ticker{
   text-align: center;
+}
+::ng-deep .p-dialog .p-dialog-content  {
+  background-color: black !important;
+}
+::ng-deep .p-dialog .p-dialog-header  {
+  background-color: black !important;
+  color: white;
+}
+.white{
+  color: white;
+  text-align: center;
+}
+.yellow{
+  color: #EDB71A;
+  font-weight: bold;
+}
+.title{
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+}
+.graficas{
+  font-weight: bold;
+  font-size: 20px;
+}
+.activos{
+  background-color: #EDB71A;
+  color: black;
+}
+.border{
+  border-style: solid;
+  border-color: #EDB71A;
+  margin-bottom: 10px;
 }

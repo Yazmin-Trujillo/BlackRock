@@ -1,26 +1,23 @@
-  <div class="conteiner">
-    <div class="section">
-    
- <h1> {{product.name}} </h1>
-      <p class="ticker">{{product.ticket}}</p>
-      <p>{{product.description}}</p>
-      <h2>Caracteristicas</h2>
-      <p><span>Horizonte de inversión:</span> {{product.investmentHorizon}}s</p>
-      <p> <span>Horario de operación: </span> {{product.operationHours}}</p>
-      <p> <span>Liquidación:</span>  {{product.settlement}}</p>
-      <p> <span>Activos:</span>  {{product.assets}}</p>
+<div class="section white">
+  <section >
+    <p class="title"> {{product.name}} </p>
+    <p class="ticker yellow">{{product.ticket}}</p>
+    <p>{{product.description}}</p>
+  </section>
+  <section class="border">
+    <h2>Caracteristicas</h2>
+    <p><span>Horizonte de inversión:</span> {{product.investmentHorizon}}s</p>
+    <p> <span>Horario de operación: </span> {{product.operationHours}}</p>      <p> <span>Liquidación:</span>  {{product.settlement}}</p>
+    <p class="activos"> <span>Activos:</span>  {{product.assets}}</p>
+  </section>
       <section>
-        <p>Composición de la cartera</p>
+
+        <p class="graficas">Composición de la cartera</p>
         <img width="300" [src]="product.composicion" />
 
-        <p>Rendimiento</p>
+        <p class="graficas">Rendimiento</p>
+
         <img width="300" [src]="product.rendimiento" />
       </section>
 
-      <section>
-        <button pButton type="button" label="Comprar" class="p-button-warning" ></button>
-      </section>
-     
-    </div>
-  </div>
-
+</div>
