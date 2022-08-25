@@ -29,7 +29,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ProductComponent } from './components/product/product.component';
 import { SplitterModule } from 'primeng/splitter';
 import { DividerModule } from 'primeng/divider';
-import { InvestmentComponent } from './components/investment/investment.component';
+import { InvestmentComponent } from './components/investment/investment.component'
 import { UseraccountComponent } from './components/useraccount/useraccount.component';
 import { UserhistoryComponent } from './components/userhistory/userhistory.component';
 import { OverlayPanelModule } from 'primeng/overlaypanel';
@@ -51,7 +51,7 @@ import {DialogModule} from 'primeng/dialog';
     ProductComponent,
     InvestmentComponent,
     UseraccountComponent,
-    UserhistoryComponent, 
+    UserhistoryComponent,
 
   ],
   imports: [
@@ -69,7 +69,7 @@ import {DialogModule} from 'primeng/dialog';
     StyleClassModule,
     HttpClientModule,
     SplitterModule,
-    TableModule
+    TableModule,
     OverlayPanelModule,
     CarouselModule,
     DialogModule
