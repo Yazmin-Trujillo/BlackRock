@@ -13,16 +13,32 @@
             font-size: 1.2rem;
             color: white;
         }
-
-        .productContainer {
-            display: flex;
-            flex-direction: column;
-            // display: grid;
-            // grid-template-columns: repeat(2, minmax(0, 1fr));
-            padding-left: 1rem;
-            padding-right: 1rem;
-            gap: 0.5rem;
-        }
     }
+}
 
+.questionButton {
+    display: flex;
+    justify-content: end;
+
+}
+
+.productGallery {
+    display: flex;
+    justify-content: center;
+    font-size: 1.4rem;
+    background: #FFCE00;
+    color: black;
+    margin-bottom: 0.5rem;
+}
+
+::ng-deep .questionButton .p-button-link {
+    color: #FFCE00;
+}
+
+.productContainer {
+    border: 2px solid white;
+}
+
+::ng-deep .p-overlaypanel .p-overlaypanel-content {
+    padding: 4rem;
 }

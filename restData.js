@@ -74,7 +74,7 @@ module.exports = function () {
             },
             {
                 "ticket": "BLKCOB+",
-                "name": "",
+                "name": "Cobertura USD",
                 "IsConvervative": true,
                 "IsModerate": true,
                 "IsAgresive": false,
