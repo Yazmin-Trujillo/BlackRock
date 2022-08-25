@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { ProfilerService } from 'src/app/services/profiler.service';
 
+
 @Component({
   selector: 'app-result',
   templateUrl: './result.component.html',
@@ -11,6 +12,8 @@ export class ResultComponent implements OnInit {
   
   profile:string;
   fondos: string;
+
+
 
   constructor(
     private profileService: ProfilerService,
@@ -35,15 +38,20 @@ export class ResultComponent implements OnInit {
     }
 
     if (total > 0 && total < 39) {
-      this.fondos = 'blk';   
+      this.fondos = 'BLKCOB+';   
     } else if (total > 39 && total < 65) {
-      this.fondos = 'gold3';  
+      this.fondos = 'BLKCOB+';  
     } else if (total > 65) {
-      this.fondos = ' gold5';  
+      this.fondos = ' GOLD5+';  
     } else {
       this.fondos = 'Contesta las preguntas para saber tu perfil'
     }
+
+    
+
   }
+
+  
 
  
 
