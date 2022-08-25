@@ -10,6 +10,7 @@ import {ToolbarModule} from 'primeng/toolbar';
 import {InputTextModule} from 'primeng/inputtext';
 import {SelectButtonModule} from 'primeng/selectbutton';
 import {Card, CardModule} from 'primeng/card';
+import {ChartModule} from 'primeng/chart';
 import { FormsModule } from '@angular/forms';
 import {StyleClassModule} from 'primeng/styleclass';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
@@ -23,7 +24,8 @@ import { FourthQuestionComponent } from './components/fourth-question/fourth-que
 import { FifthQuestionComponent } from './components/fifth-question/fifth-question.component';
 import {HttpClientModule} from '@angular/common/http';
 import { ProductComponent } from './components/product/product.component';
-import { InvestmentComponent } from './components/investment/investment.component'
+import { InvestmentComponent } from './components/investment/investment.component';
+import { UseraccountComponent } from './components/useraccount/useraccount.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +40,8 @@ import { InvestmentComponent } from './components/investment/investment.componen
     FourthQuestionComponent,
     FifthQuestionComponent,
     ProductComponent,
-    InvestmentComponent
+    InvestmentComponent,
+    UseraccountComponent, 
 
   ],
   imports: [
@@ -52,6 +55,7 @@ import { InvestmentComponent } from './components/investment/investment.componen
     InputTextModule,
     SelectButtonModule,
     CardModule,
+    ChartModule,
     StyleClassModule,
     HttpClientModule
   ],
