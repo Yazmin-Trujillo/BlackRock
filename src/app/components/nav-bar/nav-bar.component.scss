@@ -12,15 +12,34 @@
 ::ng-deep .p-sidebar {
     background: black;
 
-    .p-button-text {
-        color: white;
+    .quizButton {
+        background: #FFCE00;
+        display: flex;
+        justify-content: center;
+
+        .p-button-text {
+            color: black;
+
+        }
     }
+
+    .navigationButtons {
+        display: flex;
+        flex-direction: column;
+
+        .p-button-text {
+            color: white;
+            display: flex;
+            align-self: start;
+        }
+    }
+
 }
 
-::ng-deep .p-button.p-button-icon-only {
-    background: black;
-    border: 1px solid #FFCE00;
-}
+// ::ng-deep .p-button.p-button-icon-only {
+//     background: black;
+//     border: 1px solid #FFCE00;
+// }
 
 ::ng-deep .p-sidebar.p-sidebar-left {
     top: 5.3rem;
@@ -33,4 +52,5 @@
 
 .p-button-label {
     text-align: start;
+    margin-left: 0.6rem;
 }

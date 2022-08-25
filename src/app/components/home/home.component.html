@@ -1,31 +1,50 @@
 <div class="homeContainer">
-    <div class="textSection">
-        <p>Un fondo de inversión es el resultado de juntar el capital de distintos inversores/personas/cliente, con el
-            cual
-            se dispone para invertir en el mercado</p>
-        <!-- <p>Un fondo de inversión es un instrumento finaciera del cual se dispone para invertir en el mercado</p> -->
-        <p>¿Pero por que elegir un Fondo de Inversión</p>
-        <p>El objetivo general de un fondo de inversión es proporcionar un rendimiento a todos aquellos inversores que
-            han
-            decidido aportar capital.</p>
-        <p>Podemos clasificarlos de acuerdo a su horizonte de tiempo:</p>
-        <ul>
-            <li type="circle">Corto plazo</li>
-            <li type="circle">Mediano plazo</li>
-            <li type="circle">Largo plazo</li>
-        </ul>
-
-        <!-- <p>Los fondos de inversión en México se tratan de mecanismos que reúnen a un grupo de personas como tú, para que
-            inviertan sus ahorros en conjunto y así puedan acceder a mejores oportunidades, es por eso que puedes
-            comenzar a
-            invertir desde cantidades muy bajas</p> -->
-    </div>
-
-    <div class="productSection">
-        <p class="productHeader">Estos son los productos en los que puedes invertir</p>
-        <div class="productContainer">
-            <app-product *ngFor="let product of products" [product]="product" routerLink="/investment-component"></app-product>
+    <div>
+        <p-overlayPanel #op>
+            <ng-template pTemplate>
+                <p>Un fondo de inversión es el resultado de juntar el capital de distintos inversores/personas/cliente,
+                    con
+                    el
+                    cual
+                    se dispone para invertir en el mercado</p>
+                <!-- <p>Un fondo de inversión es un instrumento finaciera del cual se dispone para invertir en el mercado</p> -->
+                <p>¿Pero por que elegir un Fondo de Inversión</p>
+                <p>El objetivo general de un fondo de inversión es proporcionar un rendimiento a todos aquellos
+                    inversores
+                    que
+                    han
+                    decidido aportar capital.</p>
+                <p>Podemos clasificarlos de acuerdo a su horizonte de tiempo:</p>
+                <ul>
+                    <li type="circle">Corto plazo</li>
+                    <li type="circle">Mediano plazo</li>
+                    <li type="circle">Largo plazo</li>
+                </ul>
+            </ng-template>
+        </p-overlayPanel>
+        <div class="questionButton">
+            <p-button label="¿Que es?" styleClass="p-button-link" (click)="op.toggle($event)"></p-button>
+            <!-- <button pButton pRipple type="button" label="¿Que es?"  class="p-button-text" 
+            (click)="op.toggle($event)"></button> -->
+            <!-- <button pButton pRipple type="button" icon="pi pi-question" class="p-button-rounded" pButton
+                (click)="op.toggle($event)"></button> -->
         </div>
+
+
+        <!-- <button type="text" pButton label="¿Que es?" (click)="op.toggle($event)"></button> -->
     </div>
+    <div class="productContainer">
+        <p-carousel [value]="products" styleClass="custom-carousel" [numVisible]="3" [numScroll]="1" [circular]="true"
+            [autoplayInterval]="3000" [responsiveOptions]="responsiveOptions">
+            <ng-template pTemplate="header">
+                <div class="productGallery">Nuestros productos</div>
+            </ng-template>
+            <ng-template let-product pTemplate="item">
+                <app-product [product]="product" routerLink="/investment-component">
+                </app-product>
+            </ng-template>
+        </p-carousel>
+    </div>
+
 
 </div>
