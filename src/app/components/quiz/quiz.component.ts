@@ -13,13 +13,10 @@ export class QuizComponent implements OnInit {
 
    constructor() { this.stateOptions = [{label: 'Ok', value: 'ok'}];
 
- 
+
 }
 
 
   ngOnInit(): void {
   }
-
-  
-  
 }
