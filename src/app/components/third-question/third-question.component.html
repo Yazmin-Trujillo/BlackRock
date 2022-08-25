@@ -5,21 +5,21 @@
 <section class="third-question">
     <h5 class="title-question">La palabra riesgo que significa para ti</h5>
     <section class="third-answers">
-        <p-card  [style]="{'width':'80%', 'height': '80%', 'margin-bottom': '2em', 'background': '#F0BF4C', 'text-align': 'center'}" routerLink="/fourth-question">
+        <p-card  [style]="{'width':'80%', 'height': '80%', 'margin-bottom': '2em', 'background': '#F0BF4C', 'text-align': 'center'}" (click)="setResThird('Alerta', 8)">
             <ng-template pTemplate="header">
                 <img class="img-quiz" alt="Card" src="../../../assets/alert.png">
             </ng-template>
             <p>Alerta</p>
         </p-card>
         
-        <p-card  [style]="{'width':'80%', 'height': '80%','margin-bottom': '2em', 'background': '#F0BF4C', 'text-align': 'center'}" routerLink="/fourth-question">
+        <p-card  [style]="{'width':'80%', 'height': '80%','margin-bottom': '2em', 'background': '#F0BF4C', 'text-align': 'center'}" (click)="setResThird('Miedo', 3)">
             <ng-template pTemplate="header">
                 <img class="img-quiz" alt="Card" src="../../../assets/fear.png">
             </ng-template>
             <p>Miedo</p>
         </p-card>
         
-        <p-card  [style]="{'width':'80%','height': '80%', 'margin-bottom': '2em', 'background': '#F0BF4C', 'text-align': 'center'}" routerLink="/fourth-question">
+        <p-card  [style]="{'width':'80%','height': '80%', 'margin-bottom': '2em', 'background': '#F0BF4C', 'text-align': 'center'}" (click)="setResThird('Oportunidad', 13)">
             <ng-template pTemplate="header">
                 <img class="img-quiz" alt="Card" src="../../../assets/happy.png">
             </ng-template>
@@ -29,7 +29,7 @@
         
         
         
-        <i class="pi pi-chevron-left" style="color: #ff4713; font-size: 2rem; margin-right: 100px;"></i>
-        <i class="pi pi-chevron-right" style="color: #ff4713; font-size: 2rem; margin-left: 200px;"></i>
+        <i class="pi pi-chevron-left" style="color: #ff4713; font-size: 2rem; margin-right: 100px;" routerLink="/second-question"></i>
+        <i class="pi pi-chevron-right" style="color: #ff4713; font-size: 2rem; margin-left: 200px;" routerLink="/fourth-question"></i>
         
         </section>

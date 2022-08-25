@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { ProfilerService } from 'src/app/services/profiler.service';
 
 @Component({
   selector: 'app-fifth-question',
@@ -8,50 +10,21 @@ import { Component, OnInit } from '@angular/core';
 export class FifthQuestionComponent implements OnInit {
 
  
-  result = [] as any;
-  points1 = 0 as any;
 
-  options = new Set([
-    'Vender',
-    'Esperar',
-    'Consultar a un experto',
- ]);
-
-  stateOptions: any[];
-
-  paymentOptions: any[];
-
-  justifyOptions: any[];
-
-  value1: string = "off";
-
-  value2!: number;
-
-  value3 = new Set([
-    'Vender',
-    'Esperar',
-    'Consultar a un experto',
- ]);
-
-  constructor() {
-    this.stateOptions = [{label: 'Ok', value: 'ok'}];
-
-  this.paymentOptions = [
-      {name: 'Option 1', value: 1},
-      {name: 'Option 2', value: 2},
-      {name: 'Option 3', value: 3}
-  ];
-
-  this.justifyOptions = [
-      {icon: 'pi pi-align-left', justify: 'Left'},
-      {icon: 'pi pi-align-right', justify: 'Right'},
-      {icon: 'pi pi-align-center', justify: 'Center'},
-   /*    {icon: 'pi pi-align-justify', justify: 'Justify'} */
-  ];
-   }
+  constructor(
+    private profileService: ProfilerService,
+    private router: Router
+    ) {}
 
 
   ngOnInit(): void {
+  }
+
+  setResFifth(name: string, value: number){
+    const res = { name, value, id: 5 }
+    this.profileService.addRes(res);
+    this.router.navigateByUrl('/result');
+    console.log(this.profileService.questions)
   }
 
 }
