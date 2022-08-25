@@ -1,5 +1,5 @@
-module.exports = function () {
-    var data = {
+
+    {
         "productsOverview": [
             {
                 "ticket": "BLKGUB1",
@@ -130,5 +130,3 @@ module.exports = function () {
             }
         ]
     }
-    return data
-}
