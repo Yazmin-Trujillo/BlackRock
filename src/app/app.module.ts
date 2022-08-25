@@ -12,6 +12,7 @@ import {SelectButtonModule} from 'primeng/selectbutton';
 import {Card, CardModule} from 'primeng/card';
 import {ChartModule} from 'primeng/chart';
 import { FormsModule } from '@angular/forms';
+import {TableModule} from 'primeng/table';
 import {StyleClassModule} from 'primeng/styleclass';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { HomeComponent } from './components/home/home.component';
@@ -26,6 +27,7 @@ import {HttpClientModule} from '@angular/common/http';
 import { ProductComponent } from './components/product/product.component';
 import { InvestmentComponent } from './components/investment/investment.component';
 import { UseraccountComponent } from './components/useraccount/useraccount.component';
+import { UserhistoryComponent } from './components/userhistory/userhistory.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +43,8 @@ import { UseraccountComponent } from './components/useraccount/useraccount.compo
     FifthQuestionComponent,
     ProductComponent,
     InvestmentComponent,
-    UseraccountComponent, 
+    UseraccountComponent,
+    UserhistoryComponent, 
 
   ],
   imports: [
@@ -57,7 +60,8 @@ import { UseraccountComponent } from './components/useraccount/useraccount.compo
     CardModule,
     ChartModule,
     StyleClassModule,
-    HttpClientModule
+    HttpClientModule,
+    TableModule
   ],
   providers: [],
   bootstrap: [AppComponent]

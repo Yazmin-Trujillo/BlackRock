@@ -11,15 +11,14 @@ export class UseraccountComponent implements OnInit {
 
   constructor() { 
     this.data = {
-      labels: ['BLKREAL rendimiento:.3%', 
-      'BLKUSLQ rendimiento:3.3%', 
-      'BLKGLO3 rendimiento:4.8%'],
+      labels: ['BLKREAL $1,000,000 rendimiento:1.3%', 
+      'BLKUSLQ $2,000,000 rendimiento:3.3%', 
+      'BLKGLO3 $2,000,000 rendimiento:4.8%'] ,
     
       datasets: [
           {
-           
               label: 'First Dataset',
-              data: [40, 25, 20],
+              data: [40, 40, 20],
               backgroundColor: [
                 "#F0BF4C",
                 "#FF4713",
@@ -34,6 +33,8 @@ export class UseraccountComponent implements OnInit {
           }
       ]
   }
+  
+  
   }
 
   ngOnInit(): void {
@@ -44,7 +45,7 @@ export class UseraccountComponent implements OnInit {
         plugins: {
             legend: {
                 labels: {
-                    color: '#495057'
+                    color: '#ffffff'
                 }
             }
         }

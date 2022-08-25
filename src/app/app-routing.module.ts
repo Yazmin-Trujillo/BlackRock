@@ -11,6 +11,7 @@ import { FourthQuestionComponent } from './components/fourth-question/fourth-que
 import { FifthQuestionComponent } from './components/fifth-question/fifth-question.component';
 import { ProductComponent } from './components/product/product.component';
 import { UseraccountComponent } from './components/useraccount/useraccount.component';
+import { UserhistoryComponent } from './components/userhistory/userhistory.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -25,6 +26,7 @@ const routes: Routes = [
   { path: 'invstment', component: InvestmentComponent},
   { path: 'p', component: ProductComponent},
   { path: 'useraccount', component: UseraccountComponent},
+  { path: 'userhistory', component: UserhistoryComponent },
   { path:'investment-component', component: InvestmentComponent},
 ];
 
