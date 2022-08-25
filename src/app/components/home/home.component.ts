@@ -10,6 +10,7 @@ import { ProdutsService } from '../../services/product.service'
 export class HomeComponent implements OnInit {
   products: Product[] = [];
   responsiveOptions;
+  // display: boolean = false;
 
   constructor(public productsService: ProdutsService) {
     this.responsiveOptions = [
@@ -29,13 +30,13 @@ export class HomeComponent implements OnInit {
         numScroll: 1
       }
     ];
-  
-}
 
-ngOnInit(): void {
-  this.productsService
-    .getProducts()
-    .subscribe((products) => (this.products = products));
-}
+  }
+
+  ngOnInit(): void {
+    this.productsService
+      .getProducts()
+      .subscribe((products) => (this.products = products));
+  }
 
 }

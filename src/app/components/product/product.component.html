@@ -1,4 +1,4 @@
-<div class="productCard">
+<div class="productCard" (click)="display=true">
     <div class="ticker">
         <span>{{product.ticket}}</span>
     </div>
@@ -6,3 +6,7 @@
         <span>{{product.name}}</span>
     </div>
 </div>
+
+<p-dialog [(visible)]="display" [modal]="true" appendTo="body">
+    <app-investment [product]="product"></app-investment>
+</p-dialog>

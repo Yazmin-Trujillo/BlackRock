@@ -26,6 +26,7 @@ import { ProductComponent } from './components/product/product.component';
 import { InvestmentComponent } from './components/investment/investment.component'
 import { OverlayPanelModule } from 'primeng/overlaypanel';
 import {CarouselModule} from 'primeng/carousel';
+import {DialogModule} from 'primeng/dialog';
 
 @NgModule({
   declarations: [
@@ -57,7 +58,8 @@ import {CarouselModule} from 'primeng/carousel';
     StyleClassModule,
     HttpClientModule,
     OverlayPanelModule,
-    CarouselModule
+    CarouselModule,
+    DialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]

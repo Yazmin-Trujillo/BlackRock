@@ -24,14 +24,8 @@
         </p-overlayPanel>
         <div class="questionButton">
             <p-button label="¿Que es?" styleClass="p-button-link" (click)="op.toggle($event)"></p-button>
-            <!-- <button pButton pRipple type="button" label="¿Que es?"  class="p-button-text" 
-            (click)="op.toggle($event)"></button> -->
-            <!-- <button pButton pRipple type="button" icon="pi pi-question" class="p-button-rounded" pButton
-                (click)="op.toggle($event)"></button> -->
-        </div>
+                  </div>
 
-
-        <!-- <button type="text" pButton label="¿Que es?" (click)="op.toggle($event)"></button> -->
     </div>
     <div class="productContainer">
         <p-carousel [value]="products" styleClass="custom-carousel" [numVisible]="3" [numScroll]="1" [circular]="true"
@@ -40,11 +34,14 @@
                 <div class="productGallery">Nuestros productos</div>
             </ng-template>
             <ng-template let-product pTemplate="item">
-                <app-product [product]="product" routerLink="/investment-component">
+                <app-product [product]="product" >
                 </app-product>
             </ng-template>
         </p-carousel>
     </div>
-
-
+<!-- 
+    <p-dialog [(visible)]="display" [modal]="true" appendTo="body">
+        <app-investment [product]="product"></app-investment>
+    </p-dialog> -->
+    
 </div>

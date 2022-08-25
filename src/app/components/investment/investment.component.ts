@@ -10,12 +10,8 @@ import { ProdutsService } from 'src/app/services/product.service';
 export class InvestmentComponent implements OnInit {
   @Input() product!: Product;
 
-  products: Product[] = [];
-  constructor(public productsService: ProdutsService) { }
+  constructor() { }
 
   ngOnInit(): void {
-    this.productsService
-    .getProducts()
-    .subscribe((products) => (this.products = products));
   }
 }
