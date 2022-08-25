@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { ProfilerService } from 'src/app/services/profiler.service';
 
-
 @Component({
   selector: 'app-result',
   templateUrl: './result.component.html',
@@ -13,11 +12,8 @@ export class ResultComponent implements OnInit {
   profile:string;
   fondos: string;
 
-
-
   constructor(
     private profileService: ProfilerService,
-    private router: Router
     ) {
       this.profile='Perfil de inversion';
       this.fondos= 'Descubre el fondo de inversión ideal para ti ';
@@ -38,20 +34,15 @@ export class ResultComponent implements OnInit {
     }
 
     if (total > 0 && total < 39) {
-      this.fondos = 'BLKCOB+';   
+      this.fondos = 'blk';   
     } else if (total > 39 && total < 65) {
-      this.fondos = 'BLKCOB+';  
+      this.fondos = 'gold3';  
     } else if (total > 65) {
-      this.fondos = ' GOLD5+';  
+      this.fondos = ' gold5';  
     } else {
       this.fondos = 'Contesta las preguntas para saber tu perfil'
     }
-
-    
-
   }
-
-  
 
  
 

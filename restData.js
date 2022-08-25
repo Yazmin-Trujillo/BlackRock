@@ -11,7 +11,10 @@ module.exports = function () {
                 "investmentHorizon": "Mayor a 1 año",
                 "operationHours": "9:00 a 14:00",
                 "settlement": "Invierte en instrumentos de deuda 100% gubernamentales federales.",
-                "assets": "$209,413 mdp"
+                "assets": "$209,413 mdp",
+                "composicion": "https://i.imgur.com/jUuJplj.png",
+                "rendimiento": "https://i.imgur.com/4FhiIsP.png"
+
             },
             {
                 "ticket": "GOLD2+",
@@ -23,7 +26,9 @@ module.exports = function () {
                 "investmentHorizon": "Mayor a 2 año",
                 "operationHours": "9:00 a 13:30",
                 "settlement": "48 hrs",
-                "assets": "$12,800 mdp"
+                "assets": "$12,800 mdp",
+                "composicion": "https://i.imgur.com/fR4VGHT.png",
+                "rendimiento": "https://i.imgur.com/lLF76FV.png"
             },
             {
                 "ticket": "GOLD3+",
@@ -35,7 +40,9 @@ module.exports = function () {
                 "investmentHorizon": "Mayor a 3 año",
                 "operationHours": "9:00 a 13:30",
                 "settlement": "48 hrs",
-                "assets": "$25,449 mdp"
+                "assets": "$25,449 mdp",
+                "composicion": "https://i.imgur.com/Nv1sPLX.png",
+                "rendimiento": "https://i.imgur.com/jcSkr7a.png"
             },
             {
                 "ticket": "BLKUSLQ",
@@ -47,7 +54,9 @@ module.exports = function () {
                 "investmentHorizon": "Mayor a 3 año",
                 "operationHours": "9:00 a una hora antes del cierre de operaciones de las bolsas de valores de México (tiempo de la Ciudad de México)",
                 "settlement": "48 hrs",
-                "assets": "$3,707 mdp"
+                "assets": "$3,707 mdp",
+                "composicion": "https://i.imgur.com/PIdudEV.png",
+                "rendimiento": "https://i.imgur.com/2V7jkux.png"
             },
             {
                 "ticket": "BLKGLO3",
@@ -59,11 +68,13 @@ module.exports = function () {
                 "investmentHorizon": "Mayor a 3 año",
                 "operationHours": "9:00 a 14:00",
                 "settlement": "48 hrs",
-                "assets": "$11,595 mdp"
+                "assets": "$11,595 mdp",
+                "composicion": "https://i.imgur.com/4y2gnmL.png",
+                "rendimiento": "https://i.imgur.com/RQRvtku.png"
             },
             {
                 "ticket": "BLKCOB+",
-                "name": "",
+                "name": "Cobertura USD",
                 "IsConvervative": true,
                 "IsModerate": true,
                 "IsAgresive": false,
@@ -71,7 +82,9 @@ module.exports = function () {
                 "investmentHorizon": "Mayor a 3 meses",
                 "operationHours": "9:00 a 13:00",
                 "settlement": "48 hrs",
-                "assets": "$1,656 mdp"
+                "assets": "$1,656 mdp",
+                "composicion": "https://i.imgur.com/HNzmDUw.png",
+                "rendimiento": "https://i.imgur.com/ucv7yoq.png"
             },
             {
                 "ticket": "BLKREAL",
@@ -83,7 +96,9 @@ module.exports = function () {
                 "investmentHorizon": "Mayor a 1 meses",
                 "operationHours": "9:00 a 13:00",
                 "settlement": "48 hrs",
-                "assets": "$815 mdp"
+                "assets": "$815 mdp",
+                "composicion": "https://i.imgur.com/GaEiiJP.png",
+                "rendimiento": "https://i.imgur.com/cs5bocP.png"
             },
             {
                 "ticket": "GOLD4+",
@@ -95,7 +110,9 @@ module.exports = function () {
                 "investmentHorizon": "Mayor a 5 años",
                 "operationHours": "9:00 a 13:30",
                 "settlement": "48 hrs",
-                "assets": "$8,354 mdp"
+                "assets": "$8,354 mdp",
+                "composicion": "https://i.imgur.com/TSMMjSR.png",
+                "rendimiento": "https://i.imgur.com/Q7Y5bEa.png"
             },
             {
                 "ticket": "GOLD5+",
@@ -107,7 +124,9 @@ module.exports = function () {
                 "investmentHorizon": "Mayor a 5 años",
                 "operationHours": "9:00 a 13:30",
                 "settlement": "48 hrs",
-                "assets": "$6,351 mdp"
+                "assets": "$6,351 mdp",
+                "composicion": "https://i.imgur.com/tbbPg8s.png",
+                "rendimiento": "https://i.imgur.com/UgRTC3M.png"
             }
         ]
     }

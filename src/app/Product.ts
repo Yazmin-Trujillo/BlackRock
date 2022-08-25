@@ -9,4 +9,7 @@ export interface Product {
   operationHours: string
   settlement: string
   assets: string
+  composicion:any
+  rendimiento:any
+
 }

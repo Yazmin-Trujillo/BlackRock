@@ -14,14 +14,14 @@
     <p>Menos de 1 año</p>
 </p-card>
 
-<p-card  [style]="{'width':'80%','margin-bottom': '2em', 'background': '#F0BF4C', 'text-align': 'center'}" (click)="setResFirst('Más de 1 año', 6)">
+<p-card  [style]="{'width':'80%', 'height': '80%', 'margin-bottom': '2em', 'background': '#F0BF4C', 'text-align': 'center'}" (click)="setResFirst('Más de 1 año', 6)">
     <ng-template pTemplate="header">
         <img class="img-quiz" alt="Card" src="../../../assets/mediumlevel.png">
     </ng-template>
     <p>Más de 1 año</p>
 </p-card>
 
-<p-card  [style]="{'width':'80%', 'margin-bottom': '2em', 'background': '#F0BF4C', 'text-align': 'center'}" (click)="setResFirst('Más de 5 años', 11)">
+<p-card  [style]="{'width':'80%', 'height': '80%', 'margin-bottom': '2em', 'background': '#F0BF4C', 'text-align': 'center'}" (click)="setResFirst('Más de 5 años', 11)">
     <ng-template pTemplate="header">
         <img class="img-quiz" alt="Card" src="../../../assets/maxlevel.png">
     </ng-template>
@@ -29,9 +29,21 @@
 </p-card>
 </section>
 
+<section class="controls">
+    <i class="pi pi-chevron-left" style="color: #ff4713; font-size: 2rem; " routerLink="/quiz"></i>
+ 
+    <section class="iconsC">
+        <i class="pi pi-circle-fill"></i>
+        <i class="pi pi-circle"></i>
+        <i class="pi pi-circle"></i>
+        <i class="pi pi-circle"></i>
+        <i class="pi pi-circle"></i>
+   
+
+    </section>
+    <i class="pi pi-chevron-right" style="color: #ff4713; font-size: 2rem; " routerLink="/second-question"></i>
+</section>
 
 
-<i class="pi pi-chevron-left" style="color: #ff4713; font-size: 2rem; margin-right: 100px;" routerLink="/quiz"></i>
-<i class="pi pi-chevron-right" style="color: #ff4713; font-size: 2rem; margin-left: 200px;" routerLink="/second-question"></i>
 
 </section>
