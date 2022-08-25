@@ -51,7 +51,11 @@ import {DialogModule} from 'primeng/dialog';
     ProductComponent,
     InvestmentComponent,
     UseraccountComponent,
+
+    UserhistoryComponent
+
     UserhistoryComponent,
+
 
   ],
   imports: [
